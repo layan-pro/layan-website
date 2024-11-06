@@ -1,0 +1,141 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; 
+}
+
+body.home { 
+    background-image: url('Art.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+ 
+.navbar { 
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center; 
+    width: 100%; 
+    background-color: transparent; 
+    padding: 10px 0;   
+    position: fixed;   
+    top: 0;   
+    left: 0;   
+    z-index: 100;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);   
+} 
+
+.navbar-brand .logo {
+    height: 50px;
+    margin-left: 100px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: black; 
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(169, 169, 169, 0.5);
+    border-radius: 70%;
+}
+
+.certi-content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;
+    padding: 80px 20px;
+    width: 80%;
+    max-width: 1200px;  
+    margin-top: 120px;  
+}
+
+.certi-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff00; 
+}
+
+.certi-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.certi-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;  
+    border-radius: 10px;
+}
+
+.certi-text {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.certi-text h2 {
+    font-size: 32px;  
+    color: #4a148c;
+    margin-bottom: 10px;
+}
+
+.certi-text p {
+    font-size: 1.2em; 
+    color: #4f4f4f;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .certi-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certi-image {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .certi-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .certi-image img {
+        max-width: 100%;
+    }
+
+    .certi-text h2 {
+        font-size: 28px;
+    }
+
+    .certi-text p {
+        font-size: 1.1em;
+    }
+}

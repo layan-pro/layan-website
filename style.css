@@ -1,0 +1,115 @@
+body {   
+    font-family: 'Cairo', sans-serif;   
+    margin: 0;   
+    padding: 0;   
+    display: flex;   
+    flex-direction: column;   
+    align-items: center;   
+}   
+body.home { 
+    background-image: url('Art2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} 
+.small-icon { 
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;  
+} 
+.navbar { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    background-color: transparent; 
+    padding: 10px 0;   
+    position: fixed;   
+    top: 0;   
+    left: 0;   
+    z-index: 100;   
+    box-shadow: 0 2px 5px rgba(88, 14, 94, 0.2);   
+} 
+
+.navbar-brand .logo {   
+    height: 50px;   
+    margin-left: 100px;   
+}   
+.navbar-nav {   
+    list-style-type: none;   
+    display: flex;   
+    justify-content: center;
+    align-items: center;  
+    gap: 40px;   
+    padding: 0;   
+    margin: 0;   
+} 
+.nav-link {   
+    text-decoration: none;   
+    color: black;   
+    padding: 10px 25px;   
+    transition: background-color 0.3s ease;   
+}   
+.nav-link:hover {   
+    background-color: rgba(169, 169, 169, 0.5);   
+    border-radius: 70%;   
+}   
+
+
+ /* Main Content Area */
+.main-content {   
+    display: flex;   
+    align-items: center;   
+    justify-content: space-between;  
+    margin-top: 400px; 
+    width: 70%;  
+} 
+.separator-line {   
+    width: 1px;   
+    height: 200px;   
+    background-color: #000000;   
+}   
+ 
+.profile-image img {   
+    width: 350px;  
+    height: 350px;
+    object-fit: cover;   
+}   
+
+.info {   
+    text-align: left;   
+    direction: 1tr;   
+    margin-right: 200px; 
+}   
+ 
+.info h1 {   
+    margin: 0;   
+    color: #333;   
+    font-weight: 700;   
+}   
+ 
+.info p {   
+    color: #555;   
+    margin: 10px 0;   
+    line-height: 1.8;    
+    font-size: 1.1em;   
+}   
+ 
+.about-button {   
+    display: inline-block;   
+    padding: 10px 20px;   
+       
+    background-color: #c05cae60; 
+    color: white;   
+    text-decoration: none;   
+    border-radius: 20px;   
+    transition: background-color 0.3s ease;   
+    font-weight: bold;   
+}   
+ 
+.about-button:hover {    
+    background-color: #7f296fbc; 
+}
+
